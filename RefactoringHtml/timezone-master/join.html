@@ -42,6 +42,7 @@
                                   <!-- 비로그인 시 -->
                                   <li class="hot"><a href="game.html">게임하기</a></li>
                                   <li><a href="titleList.html">문제목록</a></li>
+                                  <li><a href="titleList.html">건의</a></li>
                                   <!-- 비로그인 시 -->
                                   <!-- 로그인 시 -->
                                   <li><a href="game.html">게임하기(로그인시)</a></li>
@@ -106,110 +107,162 @@
                       <input type="text" class="form-control" id="last" name="name" />
                       <span class="placeholder" data-placeholder="Last name"></span>
                     </div> -->
-                    <!-- 아이디 입력창 -->
+
+                    <!----------------------------------------이름 입력창---------------------------------------->
+                    <div>
+                        &nbsp&nbsp&nbsp&nbsp이름
+                    </div>
+                    <div class="col-md-12 form-group p_star">
+                        <input type="text" class="form-control" id="company" name="company" placeholder="이름 입력해주세요" />
+                    </div>
+                    <!----------------------------------------이름 입력창---------------------------------------->
+                    <!----------------------------------------나이 입력창---------------------------------------->
+                    <div>
+                        &nbsp&nbsp&nbsp&nbsp나이
+                    </div>
+                    <div class="col-md-12 form-group p_star">
+                        <input type="text" class="form-control" id="age" name="age"  placeholder="나이 입력해주세요" />
+                    </div>
+                    <!----------------------------------------나이 입력창---------------------------------------->
+                    <!----------------------------------------아이디 입력창---------------------------------------->
                     <div>
                         &nbsp&nbsp&nbsp&nbsp아이디
                     </div>
                     <div class="col-md-12 form-group p_star">
-                        <input type="text" class="form-control" id="company" name="company"  />
-                        <span class="placeholder" data-placeholder="아이디 입력"></span>
+                        <input type="text" class="form-control" id="company" name="company" placeholder="아이디 입력"  />
                     </div>
-                    <!-- 아이디 입력창 -->
-                    <!-- 비밀번호 입력창 -->
+                    <!----------------------------------------아이디 입력창---------------------------------------->
+                    <!----------------------------------------비밀번호 입력창---------------------------------------->
                     <div>
                         &nbsp&nbsp&nbsp&nbsp비밀번호
                     </div>
                     <div class="col-md-12 form-group p_star">
-                        <input type="password" class="form-control" id="company" name="company" />
-                        <span class="placeholder" data-placeholder="비밀번호 입력"></span>
+                        <input type="password" class="form-control" id="company" name="company" placeholder="비밀번호 확인 입력"/>
                     </div>
-                    <!-- 비밀번호 입력창 -->
-                    <!-- 폰번호 입력창 -->
+                    <!----------------------------------------비밀번호 입력창---------------------------------------->
+                    <!----------------------------------------비밀번호 확인 입력창---------------------------------------->
+                    <div>
+                        &nbsp&nbsp&nbsp&nbsp비밀번호 확인
+                    </div>
+                    <div class="col-md-12 form-group p_star">
+                        <input type="password" class="form-control" id="company" name="company" placeholder="비밀번호 입력"/>
+                    </div>
+                    <!----------------------------------------비밀번호 확인 입력창---------------------------------------->
+                    <!----------------------------------------폰번호 입력창---------------------------------------->
                     <div>
                         &nbsp&nbsp&nbsp&nbsp휴대폰 번호
                     </div>
                     <div class="col-md-12 form-group1 p_star">
-                        <input type="password" class="form-control" id="company" name="company" />
-                        <span class="placeholder" data-placeholder="폰번호 입력"></span>
+                        <input type="tel" class="form-control" id="company" name="company" placeholder="폰번호 입력" />
                     </div>
-                        <!-- 인증번호 발송 -->
-                    <div style="display: block;">
+                    <!----------------------------------------폰번호 입력창---------------------------------------->
+                    <!----------------------------------------인증번호 입력창---------------------------------------->
+                    <div class="col-md-6 form-group p_star"><br>
+                        <input type="text" class="form-control" id="number" name="number" placeholder="인증번호 입력"/>
+                    </div>
+                    <!----------------------------------------인증번호 입력창---------------------------------------->
+                    <!----------------------------------------인증번호 발송버튼---------------------------------------->
+                    <div>
                         <br>
                         &nbsp&nbsp&nbsp&nbsp<a href="#" class="genric-btn info circle">인증번호 발송</a>
                     </div>
-                        <!-- 인증번호 발송 -->
-                    <!-- 폰번호 입력창 -->
-                    <!-- 이메일 입력창 -->
-                    
+                    <!----------------------------------------인증번호 발송버튼---------------------------------------->
+                    <!-- 인증번호가 발송되면 재발송, 확인버튼 display : none 제거하기  -->
+                    <!----------------------------------------인증번호 재발송---------------------------------------->
+                    <div style="display: none;">
+                        <br>
+                        &nbsp&nbsp&nbsp&nbsp<a href="#" class="genric-btn info circle">인증번호 재발송</a>
+                    </div>
+                    <!----------------------------------------인증번호 재발송---------------------------------------->
+                    <!----------------------------------------인증번호 확인---------------------------------------->
+                    <div style="display: none;">
+                        <br>
+                        &nbsp&nbsp&nbsp&nbsp<a href="#" class="genric-btn info circle">인증번호 확인</a>
+                    </div>
+                    <!----------------------------------------인증번호 확인---------------------------------------->
+                    <!----------------------------------------이메일 입력창---------------------------------------->
                     <div class="col-md-12 form-group p_star">
                         <div>
                             <br>이메일
                         </div>
-                        <input type="email" class="form-control" id="company" name="company" placeholder="이메일 입력" />
+                        <input type="email" class="form-control" id="company" name="company" placeholder="이메일 입력해주세요" />
                     </div>
-                    <!-- 이메일 입력창 -->
+                    <!----------------------------------------이메일 입력창---------------------------------------->
+                    <!----------------------------------------성별 선택---------------------------------------->
+                    <div>
+                        &nbsp&nbsp&nbsp&nbsp성별
+                    </div>
+                    <div class="col-md-12 form-group p_star">
+                        <select class="country_select">
+                            <option value="1">남자</option>
+                            <option value="2">여자</option>
+                        </select>
+                    </div>
+                    <!----------------------------------------성별 선택---------------------------------------->
+                    <!----------------------------------------주소 입력---------------------------------------->
+                    <div>
+                        &nbsp&nbsp&nbsp&nbsp주소
+                    </div>
+                    <div class="col-md-12 form-group p_star">
+                        <input type="text" class="form-control" id="add1" name="add1" placeholder="주소"/>
+                    </div>
+                    <div>
+                        &nbsp&nbsp&nbsp&nbsp<a href="#" class="genric-btn info circle">주소 찾기</a>
+                        <div><br></div> <!-- 공백 -->
+                    </div>
+                    <!----------------------------------------주소 입력---------------------------------------->
+                   
+
+                        <div style="justify-items: center;" class="col-md-12 form-group p_star">
+                            <button type="submit" class="button button-contactForm btn_1 boxed-btn" style="width: 755px;">회원가입</button>
+
+                        </div>
                     
-                    <div class="col-md-6 form-group p_star">
-                      <input type="text" class="form-control" id="number" name="number" />
-                      <span class="placeholder" data-placeholder="Phone number"></span>
-                    </div>
-                    <div class="col-md-6 form-group p_star">
-                      <input type="text" class="form-control" id="email" name="compemailany" />
-                      <span class="placeholder" data-placeholder="Email Address"></span>
-                    </div>
-                    <div class="col-md-12 form-group p_star">
-                      <select class="country_select">
-                        <option value="1">Country</option>
-                        <option value="2">Country</option>
-                        <option value="4">Country</option>
-                      </select>
+                    
+                    
+                    
+                    <!----------------------------------------필요시 살리기---------------------------------------->
+                    <!-- <div class="col-md-12 form-group p_star">
+                        <input type="text" class="form-control" id="city" name="city" />
+                        <span class="placeholder" data-placeholder="Town/City"></span>
                     </div>
                     <div class="col-md-12 form-group p_star">
-                      <input type="text" class="form-control" id="add1" name="add1" />
-                      <span class="placeholder" data-placeholder="Address line 01"></span>
-                    </div>
-                    <div class="col-md-12 form-group p_star">
-                      <input type="text" class="form-control" id="add2" name="add2" />
-                      <span class="placeholder" data-placeholder="Address line 02"></span>
-                    </div>
-                    <div class="col-md-12 form-group p_star">
-                      <input type="text" class="form-control" id="city" name="city" />
-                      <span class="placeholder" data-placeholder="Town/City"></span>
-                    </div>
-                    <div class="col-md-12 form-group p_star">
-                      <select class="country_select">
-                        <option value="1">District</option>
-                        <option value="2">District</option>
-                        <option value="4">District</option>
-                      </select>
+                        <select class="country_select">
+                            <option value="1">District</option>
+                            <option value="2">District</option>
+                            <option value="4">District</option>
+                        </select>
                     </div>
                     <div class="col-md-12 form-group">
-                      <input type="text" class="form-control" id="zip" name="zip" placeholder="Postcode/ZIP" />
+                        <input type="text" class="form-control" id="zip" name="zip" placeholder="Postcode/ZIP" />
                     </div>
                     <div class="col-md-12 form-group">
                       <div class="creat_account">
-                        <input type="checkbox" id="f-option2" name="selector" />
-                        <label for="f-option2">Create an account?</label>
-                      </div>
+                          <input type="checkbox" id="f-option2" name="selector" />
+                          <label for="f-option2">Create an account?</label>
+                        </div>
                     </div>
                     <div class="col-md-12 form-group">
-                      <div class="creat_account">
-                        <h3>Shipping Details</h3>
-                        <input type="checkbox" id="f-option3" name="selector" />
-                        <label for="f-option3">Ship to a different address?</label>
-                      </div>
-                      <textarea class="form-control" name="message" id="message" rows="1"
+                        <div class="creat_account">
+                            <h3>Shipping Details</h3>
+                            <input type="checkbox" id="f-option3" name="selector" />
+                            <label for="f-option3">Ship to a different address?</label>
+                        </div>
+                        <textarea class="form-control" name="message" id="message" rows="1"
                         placeholder="Order Notes"></textarea>
                     </div>
-                  </form>
-                </div>
-                
-              </div>
+                </form>
             </div>
-          </div>
-        </section>
-        <!--================End Checkout Area =================-->
-    </main>
+            
+        </div>
+    </div>
+</div> -->
+                    <!----------------------------------------필요시 살리기---------------------------------------->
+                </section>
+                <!--================End Checkout Area =================-->
+            </main>
+            
+            <!----------------------------------------푸터---------------------------------------->
     <footer>
         <!-- Footer Start-->
         <div class="footer-area footer-padding">
