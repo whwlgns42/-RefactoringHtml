@@ -9685,7 +9685,7 @@ input:focus {
     display: none;
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .header-right .window_min_text {
     display: none;
   }
@@ -9693,7 +9693,10 @@ input:focus {
 
 @media screen and (min-width: 786px) {
   .logo a img {
-    width: 45%;
+    width: 100%;
+  }
+  .logo {
+    width: 20%;
   }
 }
 
