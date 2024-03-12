@@ -119,8 +119,8 @@
                                         <button type="submit" value="submit" class="btn_3">
                                             log in
                                         </button>
-                                        <a class="lost_pass" href="#"> 비밀번호 찾기</a>
-                                        <a class="lost_pass" href="#">아이디 찾기 /</a>
+                                        <a class="lost_pass" id="searchLoginPw" style="cursor: pointer;"> 비밀번호 찾기</a>
+                                        <a class="lost_pass"  id="searchLoginId" style="cursor: pointer;" >아이디 찾기 /</a>
                                     </div>
                                 </form>
                             </div>
@@ -141,6 +141,96 @@
             </form>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+    //  아이디 찾기
+     document.getElementById("searchLoginId").addEventListener("click", async () => {
+  const { value: formValues } = await Swal.fire({
+    title: "아이디 찾기",
+    html: `
+      <input id="swal-input1" class="swal2-input" placeholder="가입 이름">
+      <input id="swal-input2" class="swal2-input" placeholder="가입시 이메일">
+    `,
+    focusConfirm: false,
+    preConfirm: async () => {
+      const email = document.getElementById("swal-input1").value;
+      const birthdate = document.getElementById("swal-input2").value;
+
+      // 서버에 데이터 전송 (fetch API 사용) (실제 API 엔드포인트로 변경)
+      const response = await fetch("/api/find-id", {
+        method: "POST",
+        body: JSON.stringify({ name, email }),
+        headers: { "Content-Type": "application/json" } // 콘텐츠 유형 헤더 설정
+      });
+
+      if (!response.ok) {
+          return "서버 전송 실패";
+        // throw new Error("서버에 데이터 전송 실패!");
+      }
+
+      // 성공적인 응답 처리 (원하는 논리로 변경)
+      const data = await response.json();
+      console.log("회원님의 아이디는 : " + data + "입니다.") 
+    //   console.log("서버 응답:", data); // 예시: 응답 데이터 기록
+      return formValues; // 추가 처리를 위해 formValues 반환
+    }
+  });
+
+  if (formValues) {
+    Swal.fire(JSON.stringify(formValues));
+  }
+});
+
+
+// 패스워드 찾기
+document.getElementById("searchLoginPw").addEventListener("click", async () => {
+  const { value: formValues } = await Swal.fire({
+    title: "비밀번호 찾기",
+    html: `
+      <input id="swal-input1" class="swal2-input" placeholder="가입 이름">
+      <input id="swal-input2" class="swal2-input" placeholder="가입시 이메일">
+    `,
+    focusConfirm: false,
+    preConfirm: async () => {
+      const email = document.getElementById("swal-input1").value;
+      const birthdate = document.getElementById("swal-input2").value;
+
+      // 서버에 데이터 전송 (fetch API 사용) (실제 API 엔드포인트로 변경)
+      const response = await fetch("/api/find-id", {
+        method: "POST",
+        body: JSON.stringify({ email, birthdate }),
+        headers: { "Content-Type": "application/json" } // 콘텐츠 유형 헤더 설정
+      });
+
+      if (!response.ok) {
+          return "서버 전송 실패";
+        // throw new Error("서버에 데이터 전송 실패!");
+      }
+
+      // 성공적인 응답 처리 (원하는 논리로 변경)
+      const data = await response.json();
+      console.log("회원님의 아이디는 : " + data + "입니다.") 
+    //   console.log("서버 응답:", data); // 예시: 응답 데이터 기록
+      return formValues; // 추가 처리를 위해 formValues 반환
+    }
+  });
+
+  if (formValues) {
+    Swal.fire(JSON.stringify(formValues));
+  }
+});
+
+        
+    </script>
     <!-- Search model end -->
     
     <!-- JS here -->
