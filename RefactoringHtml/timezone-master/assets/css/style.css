@@ -4790,9 +4790,8 @@ input:focus {
   font-weight: 400;
 }
 
-.reply-btn .btn-reply:hover{
+.reply-btn .btn-reply:hover {
   color: #ff0000;
-  
 }
 .comment-form {
   border-top: 1px solid #eee;
@@ -6210,7 +6209,7 @@ del {
 .submit_btn:hover {
   background: transparent;
 }
-.btn_1{
+.btn_1 {
   display: inline-block;
   padding: 17px 50px;
   border-radius: 5px;
@@ -6224,7 +6223,7 @@ del {
   color: #fff;
 }
 
-.title_create_btn{
+.title_create_btn {
   display: inline-block;
   padding: 17px 50px;
   border-radius: 5px;
@@ -9736,5 +9735,34 @@ input:focus {
   }
   .header-right {
     display: none;
+  }
+}
+
+/* 버튼 컨테이너 스타일 */
+.button-container {
+  display: flex;
+  /* 가로 방향으로 정렬 */
+  justify-content: center;
+  /* 버튼들이 한 줄로 표시되도록 설정 */
+  flex-wrap: wrap;
+  /* 가로 방향 간격 설정 */
+}
+
+/* 버튼 간격을 조절하는 마이너스 마진 */
+.game-button {
+  margin: 5px; /* gap 대신 음수 margin을 사용합니다. */
+}
+
+/* 미디어 쿼리: 화면이 작아질 때 버튼들이 위아래로 정렬되도록 설정 */
+@media (max-width: 600px) {
+  .button-container {
+    /* 세로 방향으로 정렬 */
+    flex-direction: column;
+    /* 버튼 간의 간격 설정 */
+    margin: 0; /* gap 대신 음수 margin을 사용합니다. */
+  }
+
+  .button-container .game-button {
+    margin: 0 0 10px 0; /* 각 버튼의 margin을 개별적으로 조절합니다. */
   }
 }
