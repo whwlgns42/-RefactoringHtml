@@ -9349,7 +9349,6 @@ input:focus {
 }
 .confirmation_part .single_confirmation_details ul li {
   position: relative;
-  text-transform: capitalize;
   padding-left: 55%;
   margin-bottom: 3px;
 }
