@@ -8794,7 +8794,7 @@ input:focus {
 .login_part .login_part_form {
   padding: 80px 70px;
   height: 600px;
-  width: 555px;
+  width: 100%;
   display: table;
 }
 @media (max-width: 991px) {
@@ -9780,3 +9780,19 @@ input:focus {
   width: 20%;
   padding: 0px;
 }
+
+/* 인증번호 입력 창 */
+.input-field-certification {
+  margin-left: 36%;
+  padding: 8px;
+  width: 25%; /* 원하는 너비로 조정하세요 */
+  margin-right: 10px;
+}
+
+
+/* 인증번호 입력 데이터 전송 버튼 */
+.change-ck-button-certification {
+  width: 7%;
+  padding: 0px;
+}
+
