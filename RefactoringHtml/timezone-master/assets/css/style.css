@@ -9766,3 +9766,20 @@ input:focus {
     margin: 0 0 10px 0; /* 각 버튼의 margin을 개별적으로 조절합니다. */
   }
 }
+
+.input-button-container {
+  display: flex;
+
+  align-items: center; /* 수직 중앙 정렬 */
+}
+
+.input-field {
+  padding: 8px;
+  width: 79%; /* 원하는 너비로 조정하세요 */
+  margin-right: 10px;
+}
+
+.change-ck-button {
+  width: 20%;
+  padding: 0px;
+}
