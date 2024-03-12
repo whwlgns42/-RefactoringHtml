@@ -5793,7 +5793,7 @@ del {
   left: 19px;
 }
 .primary-switch input:checked + label:before {
-  background: #222;
+  background: #2577fd;
 }
 .confirm-switch {
   width: 35px;
@@ -6210,7 +6210,7 @@ del {
 .submit_btn:hover {
   background: transparent;
 }
-.btn_1 {
+.btn_1{
   display: inline-block;
   padding: 17px 50px;
   border-radius: 5px;
@@ -6223,6 +6223,21 @@ del {
   text-transform: capitalize;
   color: #fff;
 }
+
+.title_create_btn{
+  display: inline-block;
+  padding: 17px 50px;
+  border-radius: 5px;
+  background-color: #2577fd;
+  border: 2px solid #2577fd;
+  font-size: 15px;
+  font-weight: 500;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-transform: capitalize;
+  color: #fff;
+}
+
 .btn_1:hover {
   background-color: #fff;
   color: #ff2020;
