@@ -148,6 +148,15 @@
         <div class="container">
           <div class="cart_inner">
             <div class="table-responsive">
+              <!-- 내 찜보기 필터 토글 버튼 -->
+              <div class="switch-wrap d-flex">
+                <p>내 찜보기</p>
+                  <div class="primary-switch" style="margin-top: 6px; margin-left: 12px;">
+                      <input type="checkbox" id="default-switch">
+                      <label for="default-switch"></label>
+                  </div>
+              </div>
+            <!-- 내 찜보기 필터 토글 버튼 -->
               <table class="table">
                 <thead>
                   <tr>
@@ -317,7 +326,7 @@
       <nav class="blog-pagination justify-content-center d-flex">
         <ul class="pagination">
             <li class="page-item">
-                <a href="#" class="page-link" aria-label="Previous">
+                <a onclick="beforeData();" class="page-link" aria-label="Previous">
                     <i class="ti-angle-left"></i>
                 </a>
             </li>
@@ -328,7 +337,7 @@
                 <a href="#" class="page-link">2</a>
             </li>
             <li class="page-item">
-                <a href="#" class="page-link" aria-label="Next">
+                <a onclick="nextData();" class="page-link" aria-label="Next">
                     <i class="ti-angle-right"></i>
                 </a>
             </li>
@@ -484,6 +493,13 @@
 
     function test1() {
         alert("문제 상세페이지 이동")
+    }
+    function nextData() {
+      alert("다음 페이지")
+    }
+
+    function beforeData() { 
+      alert("이전 페이지 ")
     }
 
 </script>
