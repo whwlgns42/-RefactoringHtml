@@ -2446,7 +2446,7 @@ input:focus {
   color: #000000;
   font-size: 16px;
   cursor: pointer;
-  padding: 31px 5px;
+  padding: 31px 10px;
 }
 .header-area .main-header .menu-wrapper .header-right span:hover {
   color: #ff2020;
@@ -9789,10 +9789,8 @@ input:focus {
   margin-right: 10px;
 }
 
-
 /* 인증번호 입력 데이터 전송 버튼 */
 .change-ck-button-certification {
   width: 7%;
   padding: 0px;
 }
-
